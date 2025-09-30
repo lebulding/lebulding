@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinTesla (CTESLA) - The Electric Revolution of Crypto</title>
-    <!-- L'icône du site (Favicon) est maintenant ajoutée -->
     <link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/lebulding/lebulding/main/Logo%20CoinTesla.JPEG.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0A0A0A; /* Un fond noir profond pour un look premium */
+            background-color: #0A0A0A;
             color: #E0E0E0;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
         .glass-card {
-            background: rgba(16, 16, 16, 0.5); /* Cartes plus sombres */
+            background: rgba(16, 16, 16, 0.5);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
@@ -37,7 +36,6 @@
             transform: translateY(-2px);
             box-shadow: 0 0 25px rgba(0, 201, 255, 0.7);
         }
-        /* Animation pour l'apparition au défilement */
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -47,7 +45,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-        /* Toast de notification personnalisé */
         #toast {
             position: fixed;
             bottom: 20px;
@@ -70,7 +67,6 @@
 </head>
 <body class="text-gray-200">
 
-    <!-- =========== Header / Navigation =========== -->
     <header class="sticky top-0 z-50 glass-card">
         <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center space-x-3">
@@ -90,7 +86,6 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 glass-card border-t border-gray-800">
             <a href="#about" class="block py-2 text-center hover:bg-gray-700 rounded">About</a>
             <a href="#tokenomics" class="block py-2 text-center hover:bg-gray-700 rounded">Tokenomics</a>
@@ -100,7 +95,6 @@
         </div>
     </header>
 
-    <!-- =========== Hero Section =========== -->
     <main class="container mx-auto px-6 pt-24 pb-16 text-center">
         <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
             CoinTesla: The Energy of the Future,
@@ -115,7 +109,6 @@
         </div>
     </main>
 
-    <!-- =========== About Section (id="about") =========== -->
     <section id="about" class="py-20 fade-in-section">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto glass-card p-8 md:p-12 rounded-2xl">
@@ -129,7 +122,6 @@
         </div>
     </section>
 
-    <!-- =========== Tokenomics Section (id="tokenomics") =========== -->
     <section id="tokenomics" class="py-20 bg-black bg-opacity-20 fade-in-section">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Tokenomics</h2>
@@ -146,63 +138,57 @@
                 </div>
                 <div class="glass-card p-8 rounded-2xl">
                     <h3 class="text-2xl font-bold hero-gradient-text mb-2">Network</h3>
-                    <p class="text-4xl font-mono font-bold">Ethereum</p>
-                    <p class="text-gray-400">Secure and decentralized</p>
+                    <p class="text-4xl font-mono font-bold">Solana</p>
+                    <p class="text-gray-400">Fast and low-cost</p>
                 </div>
             </div>
             <div class="text-center mt-12 glass-card p-6 rounded-2xl max-w-4xl mx-auto">
-                   <h3 class="text-xl font-bold mb-2">Contract Address</h3>
-                   <p id="contractAddress" class="text-sm md:text-base font-mono bg-gray-900 p-3 rounded-lg break-all">0x6d82550BAE975C4fdBfaF0A4916A5F886892B9a8</p>
+                   <h3 class="text-xl font-bold mb-2">Mint Address</h3>
+                   <!-- L'ADRESSE SOLANA EST MAINTENANT INTÉGRÉE -->
+                   <p id="contractAddress" class="text-sm md:text-base font-mono bg-gray-900 p-3 rounded-lg break-all">GJmJ4NyZqm2XStcJx75rs3C5JJZH1XCt8smQ2jp71Hgi</p>
                    <button id="copyButton" class="mt-4 btn-primary text-white font-bold py-2 px-6 rounded-lg">Copy Address</button>
             </div>
         </div>
     </section>
 
-    <!-- =========== Roadmap Section (id="roadmap") =========== -->
     <section id="roadmap" class="py-20 fade-in-section">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-16 text-white">Our Roadmap</h2>
             <div class="max-w-3xl mx-auto space-y-12 relative">
-                <!-- Vertical Line -->
                 <div class="absolute left-4 top-0 h-full w-0.5 bg-gray-800"></div>
                 
-                <!-- Step 1 -->
                 <div class="pl-12 relative">
                     <div class="absolute left-0 top-1 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
                         <div class="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
                     </div>
                     <h3 class="text-2xl font-bold hero-gradient-text">Phase 1 - Launch</h3>
-                    <p class="text-gray-400 mt-2">Contract deployment, website and social media creation. Building the initial community.</p>
+                    <p class="text-gray-400 mt-2">Token creation on Solana, website update, social media launch. Building the initial community.</p>
                 </div>
-                <!-- Step 2 -->
                 <div class="pl-12 relative">
                     <div class="absolute left-0 top-1 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
                          <div class="w-4 h-4 bg-gray-600 rounded-full"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Phase 2 - Growth</h3>
-                    <p class="text-gray-400 mt-2">Listing on CoinGecko and CoinMarketCap. Liquidity creation on Uniswap. Strategic partnerships.</p>
+                    <p class="text-gray-400 mt-2">Listing on CoinGecko and CoinMarketCap. Liquidity creation on Raydium (Solana's DEX). Strategic partnerships.</p>
                 </div>
-                <!-- Step 3 -->
                 <div class="pl-12 relative">
                     <div class="absolute left-0 top-1 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
                          <div class="w-4 h-4 bg-gray-600 rounded-full"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Phase 3 - Utility</h3>
-                    <p class="text-gray-400 mt-2">Development of a concrete use case for CTESLA. Launch of a staking platform or a DApp.</p>
+                    <p class="text-gray-400 mt-2">Development of a concrete use case for CTESLA. Launch of a staking platform or a Solana DApp.</p>
                 </div>
-                 <!-- Step 4 -->
-                <div class="pl-12 relative">
+                 <div class="pl-12 relative">
                      <div class="absolute left-0 top-1 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
                          <div class="w-4 h-4 bg-gray-600 rounded-full"></div>
                     </div>
                     <h3 class="text-2xl font-bold text-white">Phase 4 - Expansion</h3>
-                    <p class="text-gray-400 mt-2">Exploration of Layer 2 solutions for faster and cheaper transactions. Expansion of the ecosystem.</p>
+                    <p class="text-gray-400 mt-2">Exploring integrations within the Solana ecosystem. Cross-chain bridges.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =========== Contact Section (id="contact") =========== -->
     <section id="contact" class="py-20 bg-black bg-opacity-20 fade-in-section">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Contact Us</h2>
@@ -210,8 +196,6 @@
                 <p class="text-center text-gray-400 mb-8">
                     Have a question or want to get involved? Send us a message!
                 </p>
-                <!-- FORMULAIRE MIS À JOUR POUR FORMSUBMIT (GRATUIT) -->
-                <!-- L'EMAIL A ÉTÉ MIS À JOUR -->
                 <form action="https://formsubmit.co/official.cointesla@gmail.com" method="POST">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Your Name</label>
@@ -233,33 +217,24 @@
         </div>
     </section>
 
-    <!-- =========== Footer =========== -->
     <footer class="bg-black bg-opacity-30 py-12">
         <div class="container mx-auto px-6 text-center">
             <p class="text-2xl font-bold text-white mb-4">Join the CoinTesla Revolution</p>
             <div class="flex justify-center space-x-6 mb-6">
-                <!-- LINKS HAVE BEEN UPDATED -->
-                <!-- X (Twitter) Icon -->
                 <a href="https://x.com/Cointesla1" target="_blank" title="X (Twitter)" class="text-gray-400 hover:text-white transition transform hover:scale-110"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.931L18.901 1.153zm-1.8 19.499h2.946L6.856 2.59h-3.13l13.375 18.062z"></path></svg></a>
-                <!-- Telegram Icon -->
                 <a href="https://t.me/Cointesla1" target="_blank" title="Telegram" class="text-gray-400 hover:text-white transition transform hover:scale-110"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.62 12.1c-.88-.25-.89-1.37.2-1.61L21.2 4.14c.75-.25 1.41.25 1.15 1.3l-3.21 15.3c-.27 1.25-1.16 1.54-2.09.93L12 19.18l-1.93 1.83c-.33.31-.61.45-.99.04z"/></svg></a>
-                <!-- Discord Icon -->
                 <a href="https://discord.gg/xeQeN3bZ" target="_blank" title="Discord" class="text-gray-400 hover:text-white transition transform hover:scale-110"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.369-.444.739-.667 1.11a18.18 18.18 0 0 0-5.32 0c-.222-.371-.456-.741-.667-1.11a.074.074 0 0 0-.079-.037A19.736 19.736 0 0 0 3.683 4.37a.074.074 0 0 0-.037.079C3.759 6.566 3.66 9.758 4.505 12.184a.074.074 0 0 0 .046.065c1.785.603 3.515.96 5.21 1.091a.074.074 0 0 0 .079-.046c.444-.555.833-1.139 1.178-1.744a.074.074 0 0 0-.046-.11c-.412-.14-.813-.28-1.204-.411a.074.074 0 0 0-.088.026c-.13.149-.249.31-.357.48a.074.074 0 0 0 .012.11c.96.444 1.954.813 2.977.813s2.018-.37 2.977-.813a.074.074 0 0 0 .012-.11c-.108-.17-.227-.331-.357-.48a.074.074 0 0 0-.088-.026c-.39-.131-.792-.271-1.204-.411a.074.074 0 0 0-.046.11c.345.605.734 1.189 1.178 1.744a.074.074 0 0 0 .079.046c1.695-.131 3.425-.488 5.21-1.091a.074.074 0 0 0 .046-.065c.845-2.426.746-5.618.86-7.736a.074.074 0 0 0-.037-.079zM8.02 15.33c-1.183 0-2.14-1.01-2.14-2.25s.957-2.25 2.14-2.25c1.183 0 2.14 1.01 2.14 2.25s-.956 2.25-2.14 2.25zm7.96 0c-1.183 0-2.14-1.01-2.14-2.25s.957-2.25 2.14-2.25c1.183 0 2.14 1.01 2.14 2.25s-.956 2.25-2.14 2.25z"/></svg></a>
-                <!-- Etherscan Icon -->
-                <a href="https://etherscan.io/token/0x6d82550BAE975C4fdBfaF0A4916A5F886892B9a8" target="_blank" title="Etherscan" class="text-gray-400 hover:text-white transition transform hover:scale-110"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22.313c-5.703 0-10.313-4.61-10.313-10.313S6.297 1.687 12 1.687s10.313 4.61 10.313 10.313-4.61 10.313-10.313 10.313z"/><path d="M12 5.438l-4.219 7.375 4.219 2.531 4.219-2.531L12 5.438zm0 8.812l-4.219-2.531 4.219 5.812 4.219-5.812-4.219 2.531z"/></svg></a>
+                <!-- Solscan Icon (Solana's Etherscan) -->
+                <a href="https://solscan.io/token/GJmJ4NyZqm2XStcJx75rs3C5JJZH1XCt8smQ2jp71Hgi" target="_blank" title="Solscan" class="text-gray-400 hover:text-white transition transform hover:scale-110"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zM9.5 15.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm5 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM9 10.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" clip-rule="evenodd" /></svg></a>
             </div>
             <p class="text-gray-500">&copy; 2025 CoinTesla. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Toast de notification pour la copie -->
     <div id="toast">Address copied!</div>
 
     <script>
-        // CORRECTION : J'enveloppe tout le script dans un écouteur d'événement pour m'assurer que la page est chargée.
         document.addEventListener('DOMContentLoaded', () => {
-
-            // Script pour le menu mobile
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenuButton && mobileMenu) {
@@ -267,19 +242,15 @@
                     mobileMenu.classList.toggle('hidden');
                 });
             }
-
-            // Script pour la notification de copie
             const toast = document.getElementById('toast');
             function showToast() {
                 if(toast) {
                     toast.classList.add('show');
                     setTimeout(() => {
                         toast.classList.remove('show');
-                    }, 2000); // Le toast disparaît après 2 secondes
+                    }, 2000);
                 }
             }
-
-            // Script pour copier l'adresse du contrat
             const copyButton = document.getElementById('copyButton');
             if(copyButton) {
                 copyButton.addEventListener('click', () => {
@@ -289,7 +260,6 @@
                             console.error('Error copying to clipboard: ', err);
                         });
                     } else {
-                        // Fallback pour les anciens navigateurs
                         const textArea = document.createElement('textarea');
                         textArea.value = contractAddress;
                         document.body.appendChild(textArea);
@@ -305,8 +275,6 @@
                     }
                 });
             }
-
-            // Script pour les animations au défilement
             const sections = document.querySelectorAll('.fade-in-section');
             if ("IntersectionObserver" in window) {
                 const observer = new IntersectionObserver((entries) => {
